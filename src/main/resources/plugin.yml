@@ -2,3 +2,31 @@ name: BuildSupport
 version: '1.0-SNAPSHOT'
 main: me.hi.BuildSupport
 api-version: '1.21'
+
+commands:
+  rain:
+    description: Toggle rain on or off
+    usage: /<command>
+    permission: buildsupport.rain
+    aliases: [togglerain]
+  mobspawn:
+    description: Toggle natural mob spawning on or off
+    usage: /<command>
+    permission: buildsupport.mobspawn
+    aliases: [togglemobs]
+  leafdecay:
+    description: Toggle leaf decay on or off
+    usage: /<command>
+    permission: buildsupport.leafdecay
+    aliases: [toggleleaves]
+
+permissions:
+  buildsupport.rain:
+    description: Allows toggling rain
+    default: op
+  buildsupport.mobspawn:
+    description: Allows toggling mob spawning
+    default: op
+  buildsupport.leafdecay:
+    description: Allows toggling leaf decay
+    default: op
